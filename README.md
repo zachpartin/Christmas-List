@@ -15,12 +15,46 @@ https://whimsical.com/wishlist-4xGf3exZxynXbb7AA4mcLe
 ## API
  I plan on having a table for each toy category and being able to fetch and post to each one, from each corresponding component.
 
+ https://airtable.com/appc1Td9GbSJiwIfM/tblNrj6VuLYfskFSa/viwZXddFreuUvGW5E?blocks=hide
+
+Sample pull:
+{
+    "records": [
+        {
+            "id": "recNUB7eWm1VR0qHW",
+            "fields": {},
+            "createdTime": "2021-10-22T13:09:45.000Z"
+        },
+        {
+            "id": "recOcl4fYKuCTpV24",
+            "fields": {
+                "Name": "Johnny",
+                "City": "New York",
+                "Electronics": "Iphone 18"
+            },
+            "createdTime": "2021-10-22T13:09:45.000Z"
+        },
+        {
+            "id": "reciXzPJW4vjbz6a5",
+            "fields": {
+                "Name": "Lisa",
+                "City": "Minneapolis",
+                "Electronics": "Ipad"
+            },
+            "createdTime": "2021-10-22T13:09:45.000Z"
+        }
+    ]
+}
+
+
 ## MVP
- Build a website that allows you to submit a christmas wish via a form which will then post to the page. It will be divided into categories of gifts and the wish will post to the page for that category.
+- Home page with buttons for each gift category that lead to a page with the respective feed
+- Form that posts new wishes to each feed when submitted
+
 
 ## Post-MVP
 
-Add a slideshow/carousel with Christmas-y images for the app page
+- Add a slideshow/carousel with Christmas-y images for the main page
 
 
 ## Project Schedule
@@ -40,25 +74,22 @@ Add a slideshow/carousel with Christmas-y images for the app page
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Airtable setup            |    H     |     .5hrs      |      1hr      |     1hr     |
-| Clickable icons           |    H     |      1hrs      |      1hr      |     1hr     |
-| Data population pg 1      |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data population pg 2      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Data population pg 3      |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Form creation pg 1        |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Form creation pg 2        |    H     |      2hrs      |     1 hr      |    1 hr     |
-| Form creation pg 3        |    H     |      2hrs      |     1 hr      |     1hr     |
-| Data creation/update pg 1 |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Data creation/update pg 2 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data creation/update pg 3 |    H     |      3hrs      |      1hr      |     1hr     |
-| Data deletion pg 1        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 2        |    H     |      2hrs      |      1hr      |     1hr     |
-| Data deletion pg 3        |    H     |      2hrs      |      1hr      |     1hr     |
-| Component CSS pg 1        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
-| Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
+| Proposal                  |    H     |      2hrs      |           |        |
+| Airtable setup            |    H     |     .5hrs      |            |          |
+| Buttons that route to components           |    H     |      2hrs      |            |         |
+| Data population pg 1      |    H     |      3hrs      |           |        |
+| Data population pg 2      |    H     |      3hrs      |           |         |
+| Data population pg 3      |    H     |      3hrs      |           |         |
+| Form creation pg 1        |    H     |      2hrs      |           |         |
+| Form creation pg 2        |    H     |      2hrs      |           |         |
+| Form creation pg 3        |    H     |      2hrs      |           |          |
+| Data creation/update pg 1 |    H     |      3hrs      |           |         |
+| Data creation/update pg 2 |    H     |      3hrs      |            |          |
+| Data creation/update pg 3 |    H     |      3hrs      |            |          |
+| Component CSS pg 1        |    H     |      3hrs      |           |        |
+| Component CSS pg 2        |    H     |      3hrs      |           |        |
+| Component CSS pg 3        |    H     |      3hrs      |          |         |
+| Total                     |    H     |    37.5    |          |        |
 
 
 
