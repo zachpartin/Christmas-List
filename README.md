@@ -1,6 +1,6 @@
 # christmas-list
 
-1. Title: Virtual Christmas List
+## 1. Title: Virtual Christmas List
 
 2. Description: An app that lets a user submit Christmas wishes by category. The main page displays buttons with categories of gifts. The user selects one which then takes them to a page with a form where they submit their wish, and the wish is posted to the page along with other wishes that are submitted in that category.
 
@@ -24,7 +24,8 @@ Tuesday:Finish React, begin styling with CSS
 Wednesday Continue CSS, begin other styling requirements (Media query and flexbox/ grid)
 Thursday: Finish styling
 
-9. Timeframes:
+## Timeframes
+
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal                  |    H     |      2hrs      |     2hrs      |    2hrs     |
@@ -46,6 +47,7 @@ Thursday: Finish styling
 | Component CSS pg 2        |    H     |      3hrs      |     4hrs      |    4hrs     |
 | Component CSS pg 3        |    H     |      3hrs      |     4hrs      |    4hrs     |
 | Total                     |    H     |    42.5hrs     |     35hrs     |    35hrs    |
+
 
 
 
