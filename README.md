@@ -14,15 +14,18 @@
 
 7. Post-MVP
 
-8. Project Schedule:
+## Project Schedule
 
-Friday: Finish readme, test out working with airtable
-Saturday:
-Sunday: Begin building with React
-Monday:Have all components built and most functionality working properly
-Tuesday:Finish React, begin styling with CSS
-Wednesday Continue CSS, begin other styling requirements (Media query and flexbox/ grid)
-Thursday: Finish styling
+| Day      | Deliverable                                | Status   |
+| -------- | ------------------------------------------ | -------- |
+| Oct 22-23 | Proposal Approval / Airtable Setup         |  |
+| Oct 24   | Component Creation / Get, post data |  |
+| Oct 25   | Components cont'd            |  |
+| Oct 26   | Finish components/ begin CSS               |  |
+| Oct 27   | CSS cont'd, begin other styling reqs (media query, flexbox)                              |  |
+| Oct 28   |           Finish styling                    |  |
+
+
 
 ## Timeframes
 
