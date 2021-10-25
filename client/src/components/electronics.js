@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Form from './form.js'
 
 
 const Electronics = () => {
@@ -24,26 +25,36 @@ const Electronics = () => {
 
 
   return (
-  
-<Form>
+    <div>
       
-<label htmlFor="name" />
-<input type="text" id="name">
-</input>
+      <h1>Electronics</h1>
+    
+{/* //   <form>
+        
+        
+//     <label htmlFor="name">Name: </label>
+//     <input type="text" id="name">
+//         </input>
+//         <br/>
+        
 
-<label htmlFor="city"/>
-<input type="text" id="city">
-</input>
+//     <label htmlFor="city">City: </label>
+//     <input type="text" id="city">
+//         </input>
+//         <br/>
 
-<label htmlFor="wish" />
-<input type="text" id="wish">
-</input>
+//     <label htmlFor="wish"></label>Wish! <label/>
+//     <input type="text" id="wish">
+//       </input>
+//       <br/>
 
-<input type="submit">Submit</input>
+//     <input type="submit"></input>
 
-
-</Form>
-
+//   </form> */}
+      
+      <Form />
+</div>
+    
   )
 }
 

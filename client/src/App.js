@@ -3,10 +3,11 @@ import './App.css';
 import Electronics from './components/electronics.js'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Route, Link } from 'react-router-dom';
 
 
 function App() {
-const [electronics, setElectronics] = useState('');
+// const [electronics, setElectronics] = useState('');
   
   
     // useEffect(() => {
@@ -29,8 +30,14 @@ const [electronics, setElectronics] = useState('');
     return (
       <div className="App">
       
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/electronics">Electronics</Link> 
+      </nav>
+
+      <Route path="/electronics">
       <Electronics />
-      
+      </Route>
 
       </div>
     );
