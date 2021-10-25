@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Electronics from './components/electronics.js'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const [electronics, setElectronics] = useState('');
+  
+  
+    // useEffect(() => {
+    //   const getElectronics = async () => {
+    //     const resp = await axios.get('https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o');
+    
+    //     console.log(resp.data.records);
+
+    //     setElectronics(resp.data.records);
+    //   }
+    
+    //   getElectronics();
+
+    // }, [])
+    
+  
+
+
+
+    return (
+      <div className="App">
+      
+      <Electronics />
+      
+
+      </div>
+    );
+  }
+
 
 export default App;
