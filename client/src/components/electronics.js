@@ -5,6 +5,7 @@ import Form from './form.js'
 
 const Electronics = () => {
   const [electronics, setElectronics] = useState('');
+  const [toggleFetch, setToggleFetch] = useState(true);
 
 
 
@@ -19,7 +20,7 @@ const Electronics = () => {
   
     getElectronics();
 
-  }, []);
+  }, [toggleFetch]);
 
 
 
