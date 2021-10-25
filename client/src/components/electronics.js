@@ -3,7 +3,7 @@ import axios from 'axios';
 import Form from './form.js'
 
 
-const Electronics = () => {
+const Electronics = (props) => {
   const [electronics, setElectronics] = useState('');
   const [toggleFetch, setToggleFetch] = useState(true);
 
@@ -54,6 +54,7 @@ const Electronics = () => {
 //   </form> */}
       
       <Form />
+      {props.electronics.data.records}
 </div>
     
   )

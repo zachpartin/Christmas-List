@@ -6,7 +6,7 @@ const Form = () => {
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [wish, setWish] = useState('');
-  const [toggleFetch, setToggleFetch] = useState(false);
+  const [toggleFetch, setToggleFetch] = useState(true);
 
   const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
 

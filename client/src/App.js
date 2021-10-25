@@ -8,7 +8,8 @@ import Homepage from './components/homepage.js'
 
 
 function App() {
-const [electronics, setElectronics] = useState('');
+  const [electronics, setElectronics] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(true);
   
   
     useEffect(() => {
@@ -42,9 +43,11 @@ const [electronics, setElectronics] = useState('');
 
 
         <Route path="/electronics">
-          {electronics.map((electronic) => (
-         <Electronics />
-       ))}   
+          {electronics.map((electronics) => (
+            <Electronics
+         {electronics.data.records}
+            />
+       ))}  
       
       </Route>
 
