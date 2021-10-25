@@ -4,7 +4,7 @@ import Form from './form.js'
 
 
 const Electronics = (props) => {
-  const [electronics, setElectronics] = useState('');
+  const [electronics, setElectronics] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);
 
 
@@ -14,21 +14,19 @@ const Electronics = (props) => {
     const getElectronics = async () => {
       const resp = await axios.get('https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o')
   
-      console.log(resp.data.records);
+      
       setElectronics(resp.data.records);
     }
   
     getElectronics();
 
-  }, [toggleFetch]);
+  }, [], toggleFetch);
 
 
 
 
   return (
     <div>
-      
-      <h1>Electronics</h1>
     
 {/* //   <form>
         
@@ -52,9 +50,17 @@ const Electronics = (props) => {
 //     <input type="submit"></input>
 
 //   </form> */}
-      
-      <Form />
-      {props.electronics.data.records}
+
+      <h3>
+        Name: {props.name} 
+      </h3>
+      <h3>
+        City: {props.city}
+      </h3>
+      <h3>
+        Wish: {props.wish}
+      </h3>
+      <hr />
 </div>
     
   )

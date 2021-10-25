@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
-const Form = () => {
+const Form = (props) => {
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [wish, setWish] = useState('');
@@ -28,7 +28,7 @@ const Form = () => {
       ]
     }
 
-    await axios.post(electronicsUrl, newWish);
+    await axios.post(props.url, newWish);
 
     setToggleFetch(!toggleFetch);
 

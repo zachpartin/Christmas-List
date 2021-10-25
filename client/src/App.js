@@ -5,11 +5,14 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Route, Link } from 'react-router-dom';
 import Homepage from './components/homepage.js'
+import Form from './components/form.js'
 
 
 function App() {
   const [electronics, setElectronics] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);
+
+  const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
   
   
     useEffect(() => {
@@ -42,10 +45,19 @@ function App() {
     </Route>
 
 
-        <Route path="/electronics">
-          {electronics.map((electronics) => (
+      <Route path="/electronics">
+          
+          <h1>Electronics</h1>
+          
+          <Form
+          url={electronicsUrl}
+          />
+
+          {electronics.map((electronic) => (
             <Electronics
-         {electronics.data.records}
+              name={electronic.fields.Name}
+              city={electronic.fields.City}
+              wish={electronic.fields.Wish}
             />
        ))}  
       
