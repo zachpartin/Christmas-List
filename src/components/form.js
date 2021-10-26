@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import axios from 'axios';
 
 
@@ -6,11 +6,11 @@ const Form = (props) => {
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [wish, setWish] = useState('');
-  const [toys, setToys] = useState([]);
+  // const [toys, setToys] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
-  const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o'
-  const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
+  // const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o'
+  // const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
   
   
 
@@ -37,24 +37,19 @@ const Form = (props) => {
         ]
       }
     
-    // let url = '';
-    // if (option.value === "electronics") {
-    //   url === electronicsUrl;
-    // } else {
-    //   url === toysUrl;
-    // }
+    
 
       await axios.post(props.url, newWish);
       setToggleFetch(!toggleFetch);
   }
 
-  useEffect(() => {
-    const getToys = async () => {
-      const resp = await axios.get(toysUrl);
-      console.log(resp.data.records);
-      setToys(resp.data.records);
-    }
-  });
+  // useEffect(() => {
+  //   const getToys = async () => {
+  //     const resp = await axios.get(toysUrl);
+  //     console.log(resp.data.records);
+  //     setToys(resp.data.records);
+  //   }
+  // });
 
 
 

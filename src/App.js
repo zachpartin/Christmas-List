@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Electronics from './components/electronics.js'
 import { useEffect, useState } from 'react';
@@ -12,7 +12,7 @@ import Toys from './components/toys.js';
 function App() {
   const [electronics, setElectronics] = useState([]);
   const [toys, setToys] = useState([]);
-  const [toggleFetch, setToggleFetch] = useState(false);
+  // const [toggleFetch, setToggleFetch] = useState(false);
   // const [toggleFetch, setToggleFetch] = useState(false);
 
   const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
