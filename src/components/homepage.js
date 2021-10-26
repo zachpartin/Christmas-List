@@ -9,7 +9,7 @@ const Homepage = () => {
 
   return (
     
-    <h1>Home</h1>
+    <h1>Virtual Christmas List</h1>
 
   )
 }

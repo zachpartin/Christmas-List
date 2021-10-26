@@ -5,15 +5,16 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Route, Link } from 'react-router-dom';
 import Homepage from './components/homepage.js'
-import Form from './components/form.js'
+import ElectronicsForm from './components/electronicsform.js'
+import ToysForm from './components/toysform.js'
 import Toys from './components/toys.js';
 
 
 function App() {
   const [electronics, setElectronics] = useState([]);
   const [toys, setToys] = useState([]);
-  // const [toggleFetch, setToggleFetch] = useState(false);
-  // const [toggleFetch, setToggleFetch] = useState(false);
+  const [toggleFetch, setToggleFetch] = useState(false);
+  
 
   const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
   const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o';
@@ -26,7 +27,7 @@ function App() {
         setElectronics(resp.data.records);
       }
       getElectronics();
-  }, [])
+  }, [toggleFetch])
   
   
   useEffect(() => {
@@ -36,7 +37,7 @@ function App() {
       setToys(resp.data.records);
     }
     getToys();
-  }, [])
+  }, [toggleFetch])
 
 
     
@@ -51,27 +52,23 @@ function App() {
 <nav>
   <Link to="/">Home</Link>
   <Link to="/electronics">Electronics</Link>
-        <Link to="/toys">Toys</Link>
-        <Link to="/form">Form</Link>
+  <Link to="/toys">Toys</Link>
 </nav>
 
-<Route path="/" exact>
+      <Route path="/" exact>
   <Homepage />
       </Route>
-      
-
-<Route path="/form">
-<Form />
-  </Route>
+    
 
 
 <Route path="/electronics">
           
     <h1>Electronics</h1>
           
-    <Form
-          url={electronicsUrl}
+    <ElectronicsForm
           
+          setToggleFetch={setToggleFetch}
+          toggleFetch={toggleFetch}
     />
 
           {electronics.map((electronic) => (
@@ -87,9 +84,9 @@ function App() {
 <Route path="/toys">
         <h1>Toys</h1>
         
-        <Form
-          url={toysUrl}
-          
+        <ToysForm
+          setToggleFetch={setToggleFetch}
+          toggleFetch={toggleFetch}
         />
           
         {toys.map((toy) => (
