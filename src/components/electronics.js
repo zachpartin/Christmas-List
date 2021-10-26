@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import Form from './form.js'
+// import { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Form from './form.js'
 
 
 const Electronics = (props) => {
-  const [electronics, setElectronics] = useState([]);
-  const [toggleFetch, setToggleFetch] = useState(true);
+  // const [electronics, setElectronics] = useState([]);
+  // const [toggleFetch, setToggleFetch] = useState(true);
 
 
 
