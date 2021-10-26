@@ -6,10 +6,19 @@ const Form = (props) => {
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [wish, setWish] = useState('');
+  const [toys, setToys] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true);
 
+  const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o'
 
-  
+  useEffect(() => {
+    const getToys = async () => {
+      const resp = await axios.get(toysUrl);
+      console.log(resp.data.records);
+      setToys(resp.data.records);
+    }
+    getToys();
+  }, [toggleFetch])
 
 
   const handleSubmit = async (ev) => {
@@ -32,8 +41,6 @@ const Form = (props) => {
     await axios.post(props.url, newWish);
 
     setToggleFetch(!toggleFetch);
-
-
 
   }
 

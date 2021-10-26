@@ -21,27 +21,20 @@ function App() {
   useEffect(() => {
       const getElectronics = async () => {
         const resp = await axios.get(electronicsUrl);
-    
         console.log(resp.data.records);
-
         setElectronics(resp.data.records);
       }
-    
       getElectronics();
-
   }, [toggleFetch])
   
   
   useEffect(() => {
     const getToys = async () => {
       const resp = await axios.get(toysUrl);
-
       console.log(resp.data.records);
-
       setToys(resp.data.records);
     }
     getToys();
-
   }, [toggleFetch])
 
 
@@ -71,8 +64,7 @@ function App() {
           
     <Form
           url={electronicsUrl}
-          toggleFetch={toggleFetch}
-          setToggleFetch={setToggleFetch}
+          
     />
 
           {electronics.map((electronic) => (
@@ -90,7 +82,7 @@ function App() {
         
         <Form
           url={toysUrl}
-          togglefetch={toggleFetch}
+          toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
         />
           
