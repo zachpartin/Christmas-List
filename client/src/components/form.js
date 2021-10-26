@@ -6,42 +6,51 @@ const Form = (props) => {
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [wish, setWish] = useState('');
-  const [toys, setToys] = useState([])
-  const [toggleFetch, setToggleFetch] = useState(true);
+  const [toys, setToys] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(false);
 
   const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o'
-
-  useEffect(() => {
+  const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
+  
     const getToys = async () => {
       const resp = await axios.get(toysUrl);
       console.log(resp.data.records);
       setToys(resp.data.records);
     }
-    getToys();
-  }, [toggleFetch])
+    
+
+  
 
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
     console.log("submitted");
 
-    const newWish = {
+    
+  
+    
+      const newWish = {
       
-      "records": [
-        {
-          "fields": {
-            "Name": name,
-            "Wish": wish,
-            "City": city
+        "records": [
+          {
+            "fields": {
+              "Name": name,
+              "Wish": wish,
+              "City": city
+            }
           }
-        }
-      ]
+        ]
+      }
+    
+    let url = '';
+    if (option.value === "electronics") {
+      url === electronicsUrl;
+    } else {
+      url === toysUrl;
     }
 
-    await axios.post(props.url, newWish);
-
-    setToggleFetch(!toggleFetch);
-
+      await axios.post(props.url, newWish);
+      setToggleFetch(!toggleFetch);
   }
 
 
@@ -71,6 +80,15 @@ const Form = (props) => {
     </input>
     <br/>
 
+        <select>
+          <option value="electronics">
+            Electronics
+          </option>
+          <option value="toys">
+            Toys
+          </option>
+        </select>
+        
   <input type="submit"></input>
 
 </form>

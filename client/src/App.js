@@ -12,10 +12,11 @@ import Toys from './components/toys.js';
 function App() {
   const [electronics, setElectronics] = useState([]);
   const [toys, setToys] = useState([]);
-  const [toggleFetch, setToggleFetch] = useState(true);
+  const [toggleFetch, setToggleFetch] = useState(false);
+  // const [toggleFetch, setToggleFetch] = useState(false);
 
   const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
-  const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o'
+  const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o';
   
   
   useEffect(() => {
@@ -25,7 +26,7 @@ function App() {
         setElectronics(resp.data.records);
       }
       getElectronics();
-  }, [toggleFetch])
+  }, [])
   
   
   useEffect(() => {
@@ -35,7 +36,7 @@ function App() {
       setToys(resp.data.records);
     }
     getToys();
-  }, [toggleFetch])
+  }, [])
 
 
     
@@ -50,12 +51,18 @@ function App() {
 <nav>
   <Link to="/">Home</Link>
   <Link to="/electronics">Electronics</Link>
-  <Link to="/toys">Toys</Link>
+        <Link to="/toys">Toys</Link>
+        <Link to="/form">Form</Link>
 </nav>
 
 <Route path="/" exact>
   <Homepage />
-</Route>
+      </Route>
+      
+
+<Route path="/form">
+<Form />
+  </Route>
 
 
 <Route path="/electronics">
@@ -82,8 +89,7 @@ function App() {
         
         <Form
           url={toysUrl}
-          toggleFetch={toggleFetch}
-          setToggleFetch={setToggleFetch}
+          
         />
           
         {toys.map((toy) => (
