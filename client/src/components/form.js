@@ -8,7 +8,8 @@ const Form = (props) => {
   const [wish, setWish] = useState('');
   const [toggleFetch, setToggleFetch] = useState(true);
 
-  const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
+
+  
 
 
   const handleSubmit = async (ev) => {

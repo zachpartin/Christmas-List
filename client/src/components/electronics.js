@@ -9,20 +9,6 @@ const Electronics = (props) => {
 
 
 
-  useEffect(() => {
-  
-    const getElectronics = async () => {
-      const resp = await axios.get('https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o')
-  
-      
-      setElectronics(resp.data.records);
-    }
-  
-    getElectronics();
-
-  }, [], toggleFetch);
-
-
 
 
   return (
