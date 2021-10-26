@@ -12,12 +12,7 @@ const Form = (props) => {
   const toysUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o'
   const electronicsUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Electronics?api_key=keyuw9Igy9sTDLK9o';
   
-    const getToys = async () => {
-      const resp = await axios.get(toysUrl);
-      console.log(resp.data.records);
-      setToys(resp.data.records);
-    }
-    
+  
 
   
 
@@ -42,18 +37,24 @@ const Form = (props) => {
         ]
       }
     
-    let url = '';
-    if (option.value === "electronics") {
-      url === electronicsUrl;
-    } else {
-      url === toysUrl;
-    }
+    // let url = '';
+    // if (option.value === "electronics") {
+    //   url === electronicsUrl;
+    // } else {
+    //   url === toysUrl;
+    // }
 
       await axios.post(props.url, newWish);
       setToggleFetch(!toggleFetch);
   }
 
-
+  useEffect(() => {
+    const getToys = async () => {
+      const resp = await axios.get(toysUrl);
+      console.log(resp.data.records);
+      setToys(resp.data.records);
+    }
+  });
 
 
 
@@ -80,14 +81,14 @@ const Form = (props) => {
     </input>
     <br/>
 
-        <select>
+        {/* <select>
           <option value="electronics">
             Electronics
           </option>
           <option value="toys">
             Toys
           </option>
-        </select>
+        </select> */}
         
   <input type="submit"></input>
 
