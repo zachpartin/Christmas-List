@@ -1,3 +1,5 @@
+import '../App.css';
+
 const Clothing = (props) => {
   return (
     <div>

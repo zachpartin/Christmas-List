@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import '../App.css';
+import './toys.css';
 
 const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   const [name, setName] = useState("");
@@ -30,8 +32,8 @@ const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="ToysForm">
+      <form onSubmit={handleSubmit} className="tform">
         <label htmlFor="name">Name: </label>
         <input
           type="text"
@@ -48,7 +50,7 @@ const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
           onChange={(ev) => setCity(ev.target.value)}
         ></input>
         <br />
-        <label htmlFor="wish"></label>Wish! <label />
+        <label htmlFor="wish"></label>Wish: <label />
         <input
           type="text"
           id="wish"

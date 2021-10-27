@@ -1,3 +1,5 @@
+import '../App.css'
+
 const Other = (props) => {
   return (
     <div>

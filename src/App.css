@@ -1,11 +1,74 @@
 .App {
   text-align: center;
+  background-color: darkred;
+  color: white;
+  /* background-image: url("https://media.istockphoto.com/photos/christmas-or-new-year-red-background-with-fir-decor-picture-id1278695666?b=1&k=20&m=1278695666&s=170667a&w=0&h=KmUzL8z89JmVUe5fwj-6cjje3wL6WMyWlTxqirctn0E="); */
+  /* background-size: 85% 100%;
+  background-repeat: no-repeat;
+  background-position:center; */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+
+.nav {
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center; 
+  background-color: darkgreen;
+  height: 30px;
+}
+
+.ClothingForm {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 200px;
+}
+
+.ElectronicsForm{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 200px;
+}
+
+.OtherForm {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 200px;
+}
+
+.SportingGoodsForm {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 200px;
+}
+
+.ToysForm {
+display: flex;
+justify-content: center;
+align-items:center;
+height: 200px;
+}
+
+
+
+input {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

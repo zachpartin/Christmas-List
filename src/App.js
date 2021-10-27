@@ -80,13 +80,13 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
+      <nav className="nav">
         <Link to="/">Home</Link>
         <Link to="/electronics">Electronics</Link>
         <Link to="/toys">Toys</Link>
         <Link to="/sportinggoods">Sporting Goods</Link>
-        <Link to="/other">Other</Link>
         <Link to="/clothing">Clothing</Link>
+        <Link to="/other">Other</Link>
       </nav>
 
       <Route path="/" exact>
@@ -114,7 +114,10 @@ function App() {
       <Route path="/toys">
         <h1>Toys</h1>
 
-        <ToysForm setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
+        <ToysForm
+          setToggleFetch={setToggleFetch}
+          toggleFetch={toggleFetch}
+        />
 
         {toys.map((toy) => (
           <Toys
