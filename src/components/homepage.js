@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="homepage">
+
+
       
       <div className="buttondiv">
       <h2>What type of gift would you like?</h2>
