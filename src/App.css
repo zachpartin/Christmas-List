@@ -8,10 +8,10 @@
   background-position:center; */
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 
 .nav {
@@ -20,6 +20,11 @@
   align-items:center; 
   background-color: darkgreen;
   height: 30px;
+}
+
+.buttondiv {
+  display: grid;
+  row-gap: 10px;
 }
 
 .clothing {
