@@ -12,19 +12,19 @@ const Homepage = () => {
         <button>Electronics</button>
         </Link>
 
-        <Link>
+        <Link to="/toys">
         <button>Toys</button>
         </Link>
 
-        <Link>
+        <Link to="/sportinggoods">
         <button>Sporting Goods</button>
         </Link>
 
-        <Link>
+        <Link to="/clothing">
         <button>Clothing</button>
         </Link>
 
-        <Link>
+        <Link to="/other">
         <button>Other</button>
         </Link>
       </div>
