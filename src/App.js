@@ -13,6 +13,7 @@ import SportingGoods from './components/sportinggoods.js';
 import SportingGoodsForm from './components/sportinggoodsform.js';
 import Clothing from './components/clothing.js';
 import ClothingForm from './components/clothingform.js';
+import Header from './components/header';
 
 
 function App() {
@@ -88,6 +89,8 @@ function App() {
         <Link to="/clothing">Clothing</Link>
         <Link to="/other">Other</Link>
       </nav>
+
+      <Header />
 
       <Route path="/" exact>
         <Homepage />

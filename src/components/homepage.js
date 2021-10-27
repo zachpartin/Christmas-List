@@ -5,10 +5,6 @@ const Homepage = () => {
   return (
     <div>
       
-      <h1>Virtual Christmas List</h1>
-      <h4>A Christmas List for the 21st Century</h4>
-
-      
       <div className="buttondiv">
       <h2>What type of gift would you like?</h2>
         <Link to="/electronics">
