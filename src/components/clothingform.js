@@ -32,6 +32,7 @@ const ClothingForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   return (
     <div className="ClothingForm">
       <form onSubmit={handleSubmit}>
+        
         <label htmlFor="name">Name: </label>
         <input
           type="text"

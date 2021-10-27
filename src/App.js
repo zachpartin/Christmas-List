@@ -97,8 +97,9 @@ function App() {
       </Route>
 
       <Route path="/electronics">
+        <div className="">
         <h1>Electronics</h1>
-
+        </div>
         <ElectronicsForm
           setToggleFetch={setToggleFetch}
           toggleFetch={toggleFetch}
@@ -117,6 +118,7 @@ function App() {
       </Route>
 
       <Route path="/toys">
+
         <h1>Toys</h1>
 
         <ToysForm

@@ -13,6 +13,9 @@
   pointer-events: none;
 } */
 
+.header {
+margin-bottom: 60px;;
+}
 
 .nav {
   display: flex;
@@ -147,10 +150,10 @@ button {
 }
 
 .ToysForm {
-display: flex;
-justify-content: center;
-align-items:center;
-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 200px;
 }
 
 
