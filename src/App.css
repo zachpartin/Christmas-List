@@ -29,6 +29,8 @@ color: white;
 
 button {
   width: 150px;
+  height: 40px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .buttondiv {

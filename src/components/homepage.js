@@ -26,6 +26,8 @@ const Homepage = () => {
         <Link to="/other">
         <button>Other</button>
         </Link>
+
+        <h5>Select a category, then submit an electronic form for your wish</h5>
       </div>
     </div>
   );
