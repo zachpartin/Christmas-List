@@ -55,11 +55,17 @@
   display: grid;
   align-items: center;
   justify-content: center;
+
+  
 }
 
 .toy {
   width: 300px;
-  background-color: black;
+  background-color: rgb(6, 55, 6);
+  border: white;
+  border: solid;
+  border-radius: 25px;
+  margin: 10px;
 }
 
 .ToysForm {
