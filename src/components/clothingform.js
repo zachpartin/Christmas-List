@@ -1,13 +1,12 @@
 import { useState } from "react";
 import axios from "axios";
 
-const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
+const ClothingForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [wish, setWish] = useState("");
 
-  const toysUrl =
-    "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o";
+  const clothingUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Clothing?api_key=keyuw9Igy9sTDLK9o';
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
@@ -25,7 +24,7 @@ const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
       ],
     };
 
-    await axios.post(toysUrl, newWish);
+    await axios.post(clothingUrl, newWish);
     setToggleFetch(!toggleFetch);
   };
 
@@ -62,4 +61,4 @@ const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   );
 };
 
-export default ToysForm;
+export default ClothingForm;

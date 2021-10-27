@@ -9,11 +9,18 @@ import ToysForm from "./components/toysform.js";
 import Toys from "./components/toys.js";
 import OtherForm from "./components/otherform.js";
 import Other from "./components/other.js";
+import SportingGoods from './components/sportinggoods.js';
+import SportingGoodsForm from './components/sportinggoodsform.js';
+import Clothing from './components/clothing.js';
+import ClothingForm from './components/clothingform.js';
+
 
 function App() {
   const [electronics, setElectronics] = useState([]);
   const [toys, setToys] = useState([]);
   const [other, setOther] = useState([]);
+  const [sportingGoods, setSportingGoods] = useState([]);
+  const [clothing, setClothing] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
   const electronicsUrl =
@@ -22,6 +29,9 @@ function App() {
     "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Toys?api_key=keyuw9Igy9sTDLK9o";
   const otherUrl =
     "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Other?api_key=keyuw9Igy9sTDLK9o";
+  const sportingGoodsUrl =
+    "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Sporting%20Goods?api_key=keyuw9Igy9sTDLK9o";
+  const clothingUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Clothing?api_key=keyuw9Igy9sTDLK9o';
 
   useEffect(() => {
     const getElectronics = async () => {
@@ -50,6 +60,24 @@ function App() {
     getOther();
   }, [toggleFetch]);
 
+  useEffect(() => {
+    const getSportingGoods = async () => {
+      const resp = await axios.get(sportingGoodsUrl);
+      console.log(resp.data.records);
+      setSportingGoods(resp.data.records);
+    }
+    getSportingGoods();
+  }, [toggleFetch]);
+
+  useEffect(() => {
+    const getClothing = async () => {
+      const resp = await axios.get(clothingUrl);
+      console.log(resp.data.records);
+      setClothing(resp.data.records);
+    }
+    getClothing();
+  }, [toggleFetch]);
+
   return (
     <div className="App">
       <nav>
@@ -58,6 +86,7 @@ function App() {
         <Link to="/toys">Toys</Link>
         <Link to="/sportinggoods">Sporting Goods</Link>
         <Link to="/other">Other</Link>
+        <Link to="/clothing">Clothing</Link>
       </nav>
 
       <Route path="/" exact>
@@ -112,7 +141,42 @@ function App() {
         ))}
       </Route>
 
-      <Route path="/sportinggoods"></Route>
+      <Route path="/sportinggoods">
+        <h1>Sporting Goods</h1>
+
+        <SportingGoodsForm
+          setToggleFetch={setToggleFetch}
+          toggleFetch={toggleFetch}
+        />
+
+{sportingGoods.map((sportingGood) => (
+          <SportingGoods
+            key={sportingGood.id}
+            name={sportingGood.fields.Name}
+            city={sportingGood.fields.City}
+            wish={sportingGood.fields.Wish}
+          />
+        ))}
+      </Route>
+
+      <Route path="/clothing">
+        <h1>Clothing</h1>
+
+        <ClothingForm
+        setToggleFetch={setToggleFetch}
+        toggleFetch={toggleFetch}
+        />
+
+        {clothing.map((garment) => (
+          <Clothing
+          key={garment.id}
+          name={garment.fields.Name}
+          city={garment.fields.City}
+          wish={garment.fields.Wish}
+        />
+        ))}
+
+      </Route>
     </div>
   );
 }
