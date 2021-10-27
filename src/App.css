@@ -22,11 +22,33 @@
   height: 30px;
 }
 
+.clothing {
+
+}
+
+.clothingdiv {
+  padding-top: 30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
 .ClothingForm {
   display: flex;
   justify-content: center;
   align-items:center;
   height: 200px;
+}
+
+.electronics {
+
+}
+
+.electronicsdiv {
+  padding-top: 30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .ElectronicsForm{
@@ -36,11 +58,33 @@
   height: 200px;
 }
 
+.other {
+
+}
+
+.otherdiv {
+  padding-top: 30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
 .OtherForm {
   display: flex;
   justify-content: center;
   align-items:center;
   height: 200px;
+}
+
+.sportinggoodsdiv{
+ padding-top: 30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.sportinggoods {
+
 }
 
 .SportingGoodsForm {
@@ -55,8 +99,6 @@
   display: grid;
   align-items: center;
   justify-content: center;
-
-  
 }
 
 .toy {

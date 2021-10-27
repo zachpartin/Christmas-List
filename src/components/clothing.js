@@ -2,7 +2,7 @@ import '../App.css';
 
 const Clothing = (props) => {
   return (
-    <div>
+    <div className="clothing">
       <h3>Name: {props.name}</h3>
 
       <h3>City: {props.city}</h3>

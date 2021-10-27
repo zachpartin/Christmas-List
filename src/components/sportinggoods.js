@@ -2,7 +2,7 @@ import '../App.css';
 
 const SportingGoods = (props) => {
   return (
-    <div>
+    <div className="sportinggoods">
       <h3>Name: {props.name}</h3>
 
       <h3>City: {props.city}</h3>

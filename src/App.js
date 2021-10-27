@@ -101,6 +101,7 @@ function App() {
           toggleFetch={toggleFetch}
         />
 
+        <div className="electronicsdiv">
         {electronics.map((electronic) => (
           <Electronics
             key={electronic.id}
@@ -109,6 +110,7 @@ function App() {
             wish={electronic.fields.Wish}
           />
         ))}
+        </div>
       </Route>
 
       <Route path="/toys">
@@ -136,6 +138,7 @@ function App() {
 
         <OtherForm setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
 
+        <div className="otherdiv">
         {other.map((other) => (
           <Other
             key={other.id}
@@ -144,6 +147,7 @@ function App() {
             wish={other.fields.Wish}
           />
         ))}
+        </div>
       </Route>
 
       <Route path="/sportinggoods">
@@ -154,6 +158,7 @@ function App() {
           toggleFetch={toggleFetch}
         />
 
+        <div className="sportinggoodsdiv">
 {sportingGoods.map((sportingGood) => (
           <SportingGoods
             key={sportingGood.id}
@@ -162,6 +167,7 @@ function App() {
             wish={sportingGood.fields.Wish}
           />
         ))}
+        </div>
       </Route>
 
       <Route path="/clothing">
@@ -172,6 +178,7 @@ function App() {
         toggleFetch={toggleFetch}
         />
 
+        <div className="clothingdiv">
         {clothing.map((garment) => (
           <Clothing
           key={garment.id}
@@ -180,6 +187,7 @@ function App() {
           wish={garment.fields.Wish}
         />
         ))}
+        </div>
 
       </Route>
     </div>
