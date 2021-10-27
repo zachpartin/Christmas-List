@@ -22,9 +22,18 @@
   height: 30px;
 }
 
+a {
+text-decoration: none;
+color: white;
+}
+
+button {
+  width: 150px;
+}
+
 .buttondiv {
   display: grid;
-  row-gap: 10px;
+  row-gap: 20px;
 }
 
 .clothing {

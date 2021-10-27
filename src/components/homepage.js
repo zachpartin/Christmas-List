@@ -10,7 +10,7 @@ const Homepage = () => {
 
       
       <div className="buttondiv">
-        <h3>What type of gift would you like?</h3>
+      <h2>What type of gift would you like?</h2>
         <Link to="/electronics">
         <button>Electronics</button>
         </Link>
