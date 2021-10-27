@@ -23,7 +23,12 @@
 }
 
 .clothing {
-
+  width: 300px;
+  background-color: rgb(6, 55, 6);
+  border: white;
+  border: solid;
+  border-radius: 25px;
+  margin: 10px;
 }
 
 .clothingdiv {
@@ -41,7 +46,12 @@
 }
 
 .electronics {
-
+  width: 300px;
+  background-color: rgb(6, 55, 6);
+  border: white;
+  border: solid;
+  border-radius: 25px;
+  margin: 10px;
 }
 
 .electronicsdiv {
@@ -59,7 +69,12 @@
 }
 
 .other {
-
+  width: 300px;
+  background-color: rgb(6, 55, 6);
+  border: white;
+  border: solid;
+  border-radius: 25px;
+  margin: 10px;
 }
 
 .otherdiv {
@@ -84,7 +99,12 @@
 }
 
 .sportinggoods {
-
+  width: 300px;
+  background-color: rgb(6, 55, 6);
+  border: white;
+  border: solid;
+  border-radius: 25px;
+  margin: 10px;
 }
 
 .SportingGoodsForm {
