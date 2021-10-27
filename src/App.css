@@ -50,6 +50,18 @@
   height: 200px;
 }
 
+.toydiv {
+  padding-top: 30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.toy {
+  width: 300px;
+  background-color: black;
+}
+
 .ToysForm {
 display: flex;
 justify-content: center;

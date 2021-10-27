@@ -119,6 +119,7 @@ function App() {
           toggleFetch={toggleFetch}
         />
 
+        <div className="toydiv">
         {toys.map((toy) => (
           <Toys
             key={toy.id}
@@ -127,6 +128,7 @@ function App() {
             wish={toy.fields.Wish}
           />
         ))}
+        </div>
       </Route>
 
       <Route path="/other">

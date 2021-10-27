@@ -3,7 +3,7 @@ import './toys.css';
 
 const Toys = (props) => {
   return (
-    <div>
+    <div className="toy">
       <h3>Name: {props.name}</h3>
 
       <h3>City: {props.city}</h3>
