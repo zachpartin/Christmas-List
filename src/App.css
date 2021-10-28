@@ -72,11 +72,12 @@ button {
   align-items:center;
   height: 250px;
   background-color: rgb(6, 55, 6);
-  width: 350px;
+  width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
-  
+  font-family: 'Zen Antique Soft', serif;
+
 }
 
 .electronics {
@@ -107,10 +108,11 @@ button {
   align-items:center;
   height: 250px;
   background-color: rgb(6, 55, 6);
-  width: 350px;
+  width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
+  font-family: 'Zen Antique Soft', serif;
 }
 
 .other {
@@ -137,10 +139,12 @@ button {
   align-items:center;
   height: 250px;
   background-color: rgb(6, 55, 6);
-  width: 350px;
+  width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
+  font-family: 'Zen Antique Soft', serif;
+
 }
 
 .sportinggoodsdiv{
@@ -167,10 +171,12 @@ button {
   align-items:center;
   height: 250px;
   background-color: rgb(6, 55, 6);
-  width: 350px;
+  width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
+  font-family: 'Zen Antique Soft', serif;
+
 }
 
 .toydiv {
@@ -197,10 +203,12 @@ button {
   align-items:center;
   height: 250px;
   background-color: rgb(6, 55, 6);
-  width: 350px;
+  width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
+  font-family: 'Zen Antique Soft', serif;
+
 }
 
 
