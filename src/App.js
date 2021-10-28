@@ -9,13 +9,12 @@ import ToysForm from "./components/toysform.js";
 import Toys from "./components/toys.js";
 import OtherForm from "./components/otherform.js";
 import Other from "./components/other.js";
-import SportingGoods from './components/sportinggoods.js';
-import SportingGoodsForm from './components/sportinggoodsform.js';
-import Clothing from './components/clothing.js';
-import ClothingForm from './components/clothingform.js';
-import Header from './components/header';
-import Carousel from 'react-bootstrap/Carousel';
-
+import SportingGoods from "./components/sportinggoods.js";
+import SportingGoodsForm from "./components/sportinggoodsform.js";
+import Clothing from "./components/clothing.js";
+import ClothingForm from "./components/clothingform.js";
+import Header from "./components/header";
+import Carousel from "react-bootstrap/Carousel";
 
 function App() {
   const [electronics, setElectronics] = useState([]);
@@ -33,7 +32,8 @@ function App() {
     "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Other?api_key=keyuw9Igy9sTDLK9o";
   const sportingGoodsUrl =
     "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Sporting%20Goods?api_key=keyuw9Igy9sTDLK9o";
-  const clothingUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Clothing?api_key=keyuw9Igy9sTDLK9o';
+  const clothingUrl =
+    "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Clothing?api_key=keyuw9Igy9sTDLK9o";
 
   useEffect(() => {
     const getElectronics = async () => {
@@ -67,7 +67,7 @@ function App() {
       const resp = await axios.get(sportingGoodsUrl);
       console.log(resp.data.records);
       setSportingGoods(resp.data.records);
-    }
+    };
     getSportingGoods();
   }, [toggleFetch]);
 
@@ -76,7 +76,7 @@ function App() {
       const resp = await axios.get(clothingUrl);
       console.log(resp.data.records);
       setClothing(resp.data.records);
-    }
+    };
     getClothing();
   }, [toggleFetch]);
 
@@ -99,7 +99,7 @@ function App() {
 
       <Route path="/electronics">
         <div className="">
-        <h1>Electronics</h1>
+          <h1>Electronics</h1>
         </div>
         <ElectronicsForm
           setToggleFetch={setToggleFetch}
@@ -107,35 +107,31 @@ function App() {
         />
 
         <div className="electronicsdiv">
-        {electronics.map((electronic) => (
-          <Electronics
-            key={electronic.id}
-            name={electronic.fields.Name}
-            city={electronic.fields.City}
-            wish={electronic.fields.Wish}
-          />
-        ))}
+          {electronics.map((electronic) => (
+            <Electronics
+              key={electronic.id}
+              name={electronic.fields.Name}
+              city={electronic.fields.City}
+              wish={electronic.fields.Wish}
+            />
+          ))}
         </div>
       </Route>
 
       <Route path="/toys">
-
         <h1>Toys</h1>
 
-        <ToysForm
-          setToggleFetch={setToggleFetch}
-          toggleFetch={toggleFetch}
-        />
+        <ToysForm setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
 
         <div className="toydiv">
-        {toys.map((toy) => (
-          <Toys
-            key={toy.id}
-            name={toy.fields.Name}
-            city={toy.fields.City}
-            wish={toy.fields.Wish}
-          />
-        ))}
+          {toys.map((toy) => (
+            <Toys
+              key={toy.id}
+              name={toy.fields.Name}
+              city={toy.fields.City}
+              wish={toy.fields.Wish}
+            />
+          ))}
         </div>
       </Route>
 
@@ -145,14 +141,14 @@ function App() {
         <OtherForm setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
 
         <div className="otherdiv">
-        {other.map((other) => (
-          <Other
-            key={other.id}
-            name={other.fields.Name}
-            city={other.fields.City}
-            wish={other.fields.Wish}
-          />
-        ))}
+          {other.map((other) => (
+            <Other
+              key={other.id}
+              name={other.fields.Name}
+              city={other.fields.City}
+              wish={other.fields.Wish}
+            />
+          ))}
         </div>
       </Route>
 
@@ -165,14 +161,14 @@ function App() {
         />
 
         <div className="sportinggoodsdiv">
-{sportingGoods.map((sportingGood) => (
-          <SportingGoods
-            key={sportingGood.id}
-            name={sportingGood.fields.Name}
-            city={sportingGood.fields.City}
-            wish={sportingGood.fields.Wish}
-          />
-        ))}
+          {sportingGoods.map((sportingGood) => (
+            <SportingGoods
+              key={sportingGood.id}
+              name={sportingGood.fields.Name}
+              city={sportingGood.fields.City}
+              wish={sportingGood.fields.Wish}
+            />
+          ))}
         </div>
       </Route>
 
@@ -180,21 +176,20 @@ function App() {
         <h1>Clothing</h1>
 
         <ClothingForm
-        setToggleFetch={setToggleFetch}
-        toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
+          toggleFetch={toggleFetch}
         />
 
         <div className="clothingdiv">
-        {clothing.map((garment) => (
-          <Clothing
-          key={garment.id}
-          name={garment.fields.Name}
-          city={garment.fields.City}
-          wish={garment.fields.Wish}
-        />
-        ))}
+          {clothing.map((garment) => (
+            <Clothing
+              key={garment.id}
+              name={garment.fields.Name}
+              city={garment.fields.City}
+              wish={garment.fields.Wish}
+            />
+          ))}
         </div>
-
       </Route>
     </div>
   );
