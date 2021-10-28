@@ -58,7 +58,7 @@ const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
           onChange={(ev) => setWish(ev.target.value)}
         ></input>
         <br />
-        <input type="submit"></input>
+        <input type="submit" className="submit"></input>
       </form>
     </div>
   );

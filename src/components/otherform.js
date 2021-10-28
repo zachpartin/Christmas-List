@@ -58,7 +58,7 @@ const OtherForm = ({toggleFetch, setToggleFetch, Name, City, Wish}) => {
         ></input>
         <br />
         
-        <input type="submit"></input>
+        <input type="submit" className="submit"></input>
       </form>
     </div>
 

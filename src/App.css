@@ -89,10 +89,11 @@ button {
   justify-content: center;
 }
 
-.form {
-  display:grid;
-  justify-content: center;
-  align-items: center;
+.submit {
+  /* position:relative;
+  left:45px; */
+
+  margin-left: 45px;
 }
 
 .ElectronicsForm{
