@@ -6,6 +6,7 @@ const Homepage = () => {
     <div className="homepage">
 
 
+<img src="https://media.timeout.com/images/105644175/750/422/image.jpg" className="santa"></img>
       
       <div className="buttondiv">
       <h2>What type of gift would you like?</h2>
@@ -31,6 +32,9 @@ const Homepage = () => {
 
         <h5>Select a category, then submit an electronic form for your wish</h5>
       </div>
+
+      
+
     </div>
   );
 };

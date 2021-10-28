@@ -42,7 +42,10 @@ button {
   display: grid;
   row-gap: 20px;
   font-family: 'Zen Antique Soft', serif;
+}
 
+.santa {
+  width:600px;
 }
 
 .clothing {
@@ -67,7 +70,12 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 200px;
+  height: 250px;
+  background-color: rgb(6, 55, 6);
+  width: 350px;
+  margin: auto;
+  border: dashed;
+  text-align: center;
   
 }
 
@@ -90,9 +98,6 @@ button {
 }
 
 .submit {
-  /* position:relative;
-  left:45px; */
-
   margin-left: 45px;
 }
 
@@ -130,7 +135,12 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 200px;
+  height: 250px;
+  background-color: rgb(6, 55, 6);
+  width: 350px;
+  margin: auto;
+  border: dashed;
+  text-align: center;
 }
 
 .sportinggoodsdiv{
@@ -155,7 +165,12 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 200px;
+  height: 250px;
+  background-color: rgb(6, 55, 6);
+  width: 350px;
+  margin: auto;
+  border: dashed;
+  text-align: center;
 }
 
 .toydiv {
@@ -180,7 +195,12 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 200px;
+  height: 250px;
+  background-color: rgb(6, 55, 6);
+  width: 350px;
+  margin: auto;
+  border: dashed;
+  text-align: center;
 }
 
 
