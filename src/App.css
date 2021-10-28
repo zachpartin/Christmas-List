@@ -46,6 +46,8 @@ button {
 
 .santa {
   width:600px;
+  margin: auto;
+  
 }
 
 .clothing {
@@ -222,7 +224,12 @@ input {
 
 
 
-
+@media screen and (max-width:600px) {
+.santa {
+  width:auto;
+  margin: auto
+}
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
