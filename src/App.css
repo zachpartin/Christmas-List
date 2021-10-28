@@ -14,7 +14,8 @@
 .headerdiv {
   /* display: grid; */
   /* row-gap: -10px; */
-margin-bottom: 60px;;
+  margin-top: 20px;
+margin-bottom: 60px;
 font-family: 'Zen Antique Soft', serif;
 }
 
@@ -27,6 +28,10 @@ font-family: 'Zen Antique Soft', serif;
   font-family: 'Zen Antique Soft', serif;
   border-bottom:solid;
 
+}
+
+.formheader {
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 a {
@@ -44,6 +49,7 @@ button {
   display: grid;
   row-gap: 20px;
   font-family: 'Zen Antique Soft', serif;
+  margin-top: 40px;
 }
 
 .xmaspics {
@@ -59,7 +65,7 @@ button {
   border-radius: 25px;
   margin: 10px;
   font-family: 'Zen Antique Soft', serif;
-
+  padding:10px;
 }
 
 .clothingdiv {
@@ -73,14 +79,13 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 250px;
+  height: 300px;
   background-color: rgb(6, 55, 6);
   width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
   font-family: 'Zen Antique Soft', serif;
-
 }
 
 .electronics {
@@ -91,6 +96,7 @@ button {
   border-radius: 25px;
   margin: 10px;
   font-family: 'Zen Antique Soft', serif;
+  padding:10px;
 
 }
 
@@ -109,13 +115,14 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 250px;
+  height: 300px;
   background-color: rgb(6, 55, 6);
   width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
   font-family: 'Zen Antique Soft', serif;
+
 }
 
 .other {
@@ -126,11 +133,12 @@ button {
   border-radius: 25px;
   margin: 10px;
   font-family: 'Zen Antique Soft', serif;
+  padding:10px;
 
 }
 
 .otherdiv {
-  margin-top: 70px;
+  margin-top: 60px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -140,13 +148,14 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 250px;
+  height: 300px;
   background-color: rgb(6, 55, 6);
   width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
   font-family: 'Zen Antique Soft', serif;
+
 
 }
 
@@ -165,6 +174,7 @@ button {
   border-radius: 25px;
   margin: 10px;
   font-family: 'Zen Antique Soft', serif;
+  padding:10px;
 
 }
 
@@ -172,13 +182,14 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 250px;
+  height: 300px;
   background-color: rgb(6, 55, 6);
   width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
   font-family: 'Zen Antique Soft', serif;
+
 
 }
 
@@ -197,6 +208,7 @@ button {
   border-radius: 25px;
   margin: 10px;
   font-family: 'Zen Antique Soft', serif;
+  padding:10px;
 
 }
 
@@ -204,13 +216,14 @@ button {
   display: flex;
   justify-content: center;
   align-items:center;
-  height: 250px;
+  height: 300px;
   background-color: rgb(6, 55, 6);
   width: 300px;
   margin: auto;
   border: dashed;
   text-align: center;
   font-family: 'Zen Antique Soft', serif;
+
 
 }
 
@@ -226,8 +239,9 @@ input {
 
 
 @media screen and (max-width:600px) {
-.santa {
-  width: 400px;;
+.xmaspics {
+  height: 250px;
+  width: 400px;
   margin: auto
 }
 

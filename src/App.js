@@ -98,9 +98,9 @@ function App() {
       </Route>
 
       <Route path="/electronics">
-        <div className="">
-          <h1>Electronics</h1>
-        </div>
+        
+          <h1 className="formheader">Electronics</h1>
+  
         <ElectronicsForm
           setToggleFetch={setToggleFetch}
           toggleFetch={toggleFetch}
@@ -119,7 +119,7 @@ function App() {
       </Route>
 
       <Route path="/toys">
-        <h1>Toys</h1>
+        <h1 className="formheader">Toys</h1>
 
         <ToysForm setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
 
@@ -136,7 +136,7 @@ function App() {
       </Route>
 
       <Route path="/other">
-        <h1>Other</h1>
+        <h1 className="formheader">Other</h1>
 
         <OtherForm setToggleFetch={setToggleFetch} toggleFetch={toggleFetch} />
 
@@ -153,7 +153,7 @@ function App() {
       </Route>
 
       <Route path="/sportinggoods">
-        <h1>Sporting Goods</h1>
+        <h1 className="formheader">Sporting Goods</h1>
 
         <SportingGoodsForm
           setToggleFetch={setToggleFetch}
@@ -173,7 +173,7 @@ function App() {
       </Route>
 
       <Route path="/clothing">
-        <h1>Clothing</h1>
+        <h1 className="formheader">Clothing</h1>
 
         <ClothingForm
           setToggleFetch={setToggleFetch}
