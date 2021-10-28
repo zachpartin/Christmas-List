@@ -7,7 +7,9 @@
   color: white;
 }
 
-
+.header {
+  font-size:large;
+}
 
 .headerdiv {
   /* display: grid; */
@@ -46,8 +48,6 @@ button {
 
 .santa {
   width:600px;
-  margin: auto;
-  
 }
 
 .clothing {
@@ -226,8 +226,16 @@ input {
 
 @media screen and (max-width:600px) {
 .santa {
-  width:auto;
+  width: 400px;;
   margin: auto
+}
+
+.nav {
+  font-size: 14px;
+}
+
+.header {
+  font-size: medium;
 }
 }
 

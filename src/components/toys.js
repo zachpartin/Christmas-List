@@ -1,5 +1,5 @@
 import '../App.css';
-import './toys.css';
+
 
 const Toys = (props) => {
   return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import '../App.css';
-import './toys.css';
+
 
 const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   const [name, setName] = useState("");
