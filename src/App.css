@@ -89,6 +89,12 @@ button {
   justify-content: center;
 }
 
+.form {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+
 .ElectronicsForm{
   display: flex;
   justify-content: center;
@@ -98,6 +104,7 @@ button {
   width: 350px;
   margin: auto;
   border: dashed;
+  text-align: center;
 }
 
 .other {

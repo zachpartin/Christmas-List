@@ -33,7 +33,7 @@ const ElectronicsForm = ({toggleFetch, setToggleFetch, Name, City, Wish}) => {
 
   return (
     <div className="ElectronicsForm">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <label htmlFor="name">Name: </label>
         <input
           type="text"
@@ -59,7 +59,7 @@ const ElectronicsForm = ({toggleFetch, setToggleFetch, Name, City, Wish}) => {
         ></input>
         <br />
         
-        <input type="submit"></input>
+        <input type="submit" className="submit"></input>
       </form>
     </div>
   );
