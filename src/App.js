@@ -14,6 +14,7 @@ import SportingGoodsForm from './components/sportinggoodsform.js';
 import Clothing from './components/clothing.js';
 import ClothingForm from './components/clothingform.js';
 import Header from './components/header';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 function App() {

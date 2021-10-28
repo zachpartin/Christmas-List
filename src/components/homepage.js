@@ -1,12 +1,35 @@
 import '../App.css';
 import { Link } from 'react-router-dom';
+import Carousel from 'react-bootstrap/Carousel'
 
 const Homepage = () => {
   return (
     <div className="homepage">
 
+<Carousel>
+  <Carousel.Item>
+    <img
+      className="xmaspics"
+      src="https://media.timeout.com/images/105644175/750/422/image.jpg"
+      alt="First slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="xmaspics"
+      src="https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4ODE4ODA4MzY1MDAwNDY1/christmas-gettyimages-184652817.jpg"
+      alt="Second slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="xmaspics"
+      src="https://townsquare.media/site/782/files/2018/11/Christmas-Tree-Carson-Ganci.jpg?w=980&q=75"
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
 
-<img src="https://media.timeout.com/images/105644175/750/422/image.jpg" className="santa"></img>
       
       <div className="buttondiv">
       <h2>What type of gift would you like?</h2>
