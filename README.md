@@ -74,24 +74,24 @@ Sample pull:
 
 ## Timeframes
 
-| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
+| Component                 | Priority | Estimated Time | Time Invested |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                  |    H     |      2hrs      |           |        |
-| Airtable setup            |    H     |     .5hrs      |            |          |
-| Buttons that route to components           |    H     |      2hrs      |            |         |
-| Data population pg 1      |    H     |      3hrs      |           |        |
-| Data population pg 2      |    H     |      3hrs      |           |         |
-| Data population pg 3      |    H     |      3hrs      |           |         |
-| Form creation pg 1        |    H     |      2hrs      |           |         |
-| Form creation pg 2        |    H     |      2hrs      |           |         |
-| Form creation pg 3        |    H     |      2hrs      |           |          |
-| Data creation/update pg 1 |    H     |      3hrs      |           |         |
-| Data creation/update pg 2 |    H     |      3hrs      |            |          |
-| Data creation/update pg 3 |    H     |      3hrs      |            |          |
-| Component CSS pg 1        |    H     |      3hrs      |           |        |
-| Component CSS pg 2        |    H     |      3hrs      |           |        |
-| Component CSS pg 3        |    H     |      3hrs      |          |         |
-| Total                     |    H     |    37.5    |          |        |
+| Proposal                  |    H     |      2hrs      |           |
+| Airtable setup            |    H     |     .5hrs      |      1 hr      |
+| Buttons that route to components           |    H     |      2hrs      |      .5 hrs      |
+| Data population pg 1      |    H     |      3hrs      |     3 hrs      |
+| Data population pg 2      |    H     |      3hrs      |      3 hrs     |
+| Data population pg 3      |    H     |      3hrs      |     3 hrs      |
+| Form creation pg 1        |    H     |      2hrs      |     3 hrs      |
+| Form creation pg 2        |    H     |      2hrs      |     3 hrs      |
+| Form creation pg 3        |    H     |      2hrs      |     3 hrs      |
+| Data creation/update pg 1 |    H     |      3hrs      |     1 hr      |
+| Data creation/update pg 2 |    H     |      3hrs      |     1 hr       |
+| Data creation/update pg 3 |    H     |      3hrs      |      1 hr      |
+| Component CSS pg 1        |    H     |      3hrs      |      3 hrs     |
+| Component CSS pg 2        |    H     |      3hrs      |    3 hrs       |
+| Component CSS pg 3        |    H     |      3hrs      |     3 hrs     |
+| Total                     |    H     |    37.5    |     33     |
 
 
 
