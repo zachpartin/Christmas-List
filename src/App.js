@@ -14,7 +14,6 @@ import SportingGoodsForm from "./components/sportinggoodsform.js";
 import Clothing from "./components/clothing.js";
 import ClothingForm from "./components/clothingform.js";
 import Header from "./components/header";
-import Carousel from "react-bootstrap/Carousel";
 
 function App() {
   const [electronics, setElectronics] = useState([]);
@@ -38,7 +37,6 @@ function App() {
   useEffect(() => {
     const getElectronics = async () => {
       const resp = await axios.get(electronicsUrl);
-      console.log(resp.data.records);
       setElectronics(resp.data.records);
     };
     getElectronics();
@@ -47,7 +45,6 @@ function App() {
   useEffect(() => {
     const getToys = async () => {
       const resp = await axios.get(toysUrl);
-      console.log(resp.data.records);
       setToys(resp.data.records);
     };
     getToys();
@@ -56,7 +53,6 @@ function App() {
   useEffect(() => {
     const getOther = async () => {
       const resp = await axios.get(otherUrl);
-      console.log(resp.data.records);
       setOther(resp.data.records);
     };
     getOther();
@@ -65,7 +61,6 @@ function App() {
   useEffect(() => {
     const getSportingGoods = async () => {
       const resp = await axios.get(sportingGoodsUrl);
-      console.log(resp.data.records);
       setSportingGoods(resp.data.records);
     };
     getSportingGoods();
@@ -74,7 +69,6 @@ function App() {
   useEffect(() => {
     const getClothing = async () => {
       const resp = await axios.get(clothingUrl);
-      console.log(resp.data.records);
       setClothing(resp.data.records);
     };
     getClothing();
@@ -98,9 +92,8 @@ function App() {
       </Route>
 
       <Route path="/electronics">
-        
-          <h1 className="formheader">Electronics</h1>
-  
+        <h1 className="formheader">Electronics</h1>
+
         <ElectronicsForm
           setToggleFetch={setToggleFetch}
           toggleFetch={toggleFetch}
