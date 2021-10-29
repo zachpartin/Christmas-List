@@ -63,12 +63,12 @@ Sample pull:
 
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
-| Oct 22-23 | Proposal Approval / Airtable Setup         |  |
-| Oct 24   | Component Creation / Get, post data |  |
-| Oct 25   | Components cont'd            |  |
-| Oct 26   | Finish components/ begin CSS               |  |
-| Oct 27   | CSS cont'd, begin other styling reqs (media query, flexbox)                              |  |
-| Oct 28   |           Finish styling                    |  |
+| Oct 22-23 | Proposal Approval / Airtable Setup         | Done |
+| Oct 24   | Component Creation / Get, post data | Done |
+| Oct 25   | Components cont'd            | Done |
+| Oct 26   | Finish components/ begin CSS               |Done |
+| Oct 27   | CSS cont'd, begin other styling reqs (media query, flexbox)                              | Done |
+| Oct 28   |           Finish styling                    | Done |
 
 
 

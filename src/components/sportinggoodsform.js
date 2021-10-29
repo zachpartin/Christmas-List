@@ -1,8 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
-import '../App.css';
+import "../App.css";
 
-const SportingGoodsForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
+const SportingGoodsForm = ({
+  toggleFetch,
+  setToggleFetch,
+  Name,
+  City,
+  Wish,
+}) => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [wish, setWish] = useState("");
@@ -12,7 +18,6 @@ const SportingGoodsForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) =>
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log("submitted");
 
     const newWish = {
       records: [

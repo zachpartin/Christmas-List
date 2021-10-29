@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import axios from 'axios';
-import '../App.css';
+import { useState } from "react";
+import axios from "axios";
+import "../App.css";
 
-const OtherForm = ({toggleFetch, setToggleFetch, Name, City, Wish}) => {
+const OtherForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [wish, setWish] = useState("");
 
-  const otherUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Other?api_key=keyuw9Igy9sTDLK9o';
-  
+  const otherUrl =
+    "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Other?api_key=keyuw9Igy9sTDLK9o";
+
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log("submitted");
 
     const newWish = {
       records: [
@@ -29,8 +29,7 @@ const OtherForm = ({toggleFetch, setToggleFetch, Name, City, Wish}) => {
     setToggleFetch(!toggleFetch);
   };
 
-
-  return(
+  return (
     <div className="OtherForm">
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name: </label>
@@ -57,13 +56,10 @@ const OtherForm = ({toggleFetch, setToggleFetch, Name, City, Wish}) => {
           onChange={(ev) => setWish(ev.target.value)}
         ></input>
         <br />
-        
         <input type="submit" className="submit"></input>
       </form>
     </div>
-
-
-  )
-}
+  );
+};
 
 export default OtherForm;

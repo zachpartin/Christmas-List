@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import '../App.css';
-
+import "../App.css";
 
 const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   const [name, setName] = useState("");
@@ -13,7 +12,6 @@ const ToysForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log("submitted");
 
     const newWish = {
       records: [

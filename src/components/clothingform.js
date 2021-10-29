@@ -1,17 +1,17 @@
 import { useState } from "react";
 import axios from "axios";
-import '../App.css';
+import "../App.css";
 
 const ClothingForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [wish, setWish] = useState("");
 
-  const clothingUrl = 'https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Clothing?api_key=keyuw9Igy9sTDLK9o';
+  const clothingUrl =
+    "https://api.airtable.com/v0/appc1Td9GbSJiwIfM/Clothing?api_key=keyuw9Igy9sTDLK9o";
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log("submitted");
 
     const newWish = {
       records: [
@@ -32,7 +32,6 @@ const ClothingForm = ({ toggleFetch, setToggleFetch, Name, City, Wish }) => {
   return (
     <div className="ClothingForm">
       <form onSubmit={handleSubmit}>
-        
         <label htmlFor="name">Name: </label>
         <input
           type="text"

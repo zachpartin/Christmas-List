@@ -1,4 +1,4 @@
-import '../App.css';
+import "../App.css";
 
 const SportingGoods = (props) => {
   return (
@@ -8,7 +8,6 @@ const SportingGoods = (props) => {
       <h3>City: {props.city}</h3>
 
       <h3>Wish: {props.wish}</h3>
-      
     </div>
   );
 };
