@@ -75,7 +75,7 @@ Sample pull:
 ## Timeframes
 
 | Component                 | Priority | Estimated Time | Time Invested |
-| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| ------------------------- | :------: | :------------: | :-----------: |
 | Proposal                  |    H     |      2hrs      |           |
 | Airtable setup            |    H     |     .5hrs      |      1 hr      |
 | Buttons that route to components           |    H     |      2hrs      |      .5 hrs      |
