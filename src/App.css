@@ -11,7 +11,7 @@
   font-size:large;
 }
 
-.headerdiv {
+.headerDiv {
   /* display: grid; */
   /* row-gap: -10px; */
   margin-top: 20px;
@@ -30,7 +30,7 @@ font-family: 'Zen Antique Soft', serif;
 
 }
 
-.formheader {
+.formHeader {
   font-family:Georgia, 'Times New Roman', Times, serif
 }
 
@@ -52,7 +52,7 @@ button {
   margin-top: 40px;
 }
 
-.xmaspics {
+.xmasPics {
   width:600px;
   height: 350px;
 }
@@ -242,7 +242,7 @@ input {
 
 
 @media screen and (max-width:600px) {
-.xmaspics {
+.xmasPics {
   height: 250px;
   width: 400px;
   margin: auto
@@ -254,6 +254,10 @@ input {
 
 .header {
   font-size: medium;
+}
+
+.instructions {
+  font-size:smaller;
 }
 }
 
