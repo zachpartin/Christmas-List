@@ -76,7 +76,7 @@ Sample pull:
 
 | Component                 | Priority | Estimated Time | Time Invested |
 | ------------------------- | :------: | :------------: | :-----------: |
-| Proposal                  |    H     |      2hrs      |           |
+| Proposal                  |    H     |      2hrs      |     2 hrs      |
 | Airtable setup            |    H     |     .5hrs      |      1 hr      |
 | Buttons that route to components           |    H     |      2hrs      |      .5 hrs      |
 | Data population pg 1      |    H     |      3hrs      |     3 hrs      |
